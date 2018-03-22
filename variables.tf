@@ -28,3 +28,8 @@ variable "ttl" {
   description = "Hours until instances are reaped by N.E.P.T.R"
   default = "3"
 }
+
+variable "description" {
+  description = "So meta"
+  default = "Foo"
+}
