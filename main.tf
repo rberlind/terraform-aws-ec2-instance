@@ -18,7 +18,7 @@ resource "aws_instance" "ubuntu" {
   }
 }
 
-resource "null_resource" "test_saas_local_exec" {
+resource "null_resource" "test_saas_local_exec_curl" {
    provisioner "local-exec" {
        command = "curl -Is https://www.google.com"
    }
