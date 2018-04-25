@@ -21,6 +21,6 @@ resource "aws_instance" "ubuntu" {
 
 resource "null_resource" "test_saas_local_exec" {
    provisioner "local-exec" {
-       command = "whoami"
+       command = "curl -Is https://www.google.com"
    }
 }
