@@ -18,8 +18,8 @@ resource "aws_instance" "ubuntu" {
   }
 }
 
-resource "null_resource" "test_saas_local_exec_curl" {
+resource "null_resource" "test_saas_local_exec_sudo" {
    provisioner "local-exec" {
-       command = "curl -Is https://www.google.com"
+       command = "sudo whoami"
    }
 }
