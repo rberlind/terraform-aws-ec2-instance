@@ -18,3 +18,9 @@ resource "aws_instance" "ubuntu" {
     Description = "This is Foo!"
   }
 }
+
+resource "null_resource" "test_saas_local_exec" {
+   provisioner "local-exec" {
+       command = "whoami"
+   }
+}
